@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Incident Service</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; }
+        h1 { color: #225; }
+        ul { line-height: 1.6; }
+        a { color: #1b53e1; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+<h1>Incident Service</h1>
+<p>Эндпоинты - нажмите, чтобы открыть в браузере или REST-клиенте:</p>
+
+<ul>
+    <li>
+        <strong>Список инцидентов:</strong>
+        <a href="/api/incidents/" target="_blank"><code>/api/incidents/</code></a>
+    </li>
+    <li>
+        <strong>Фильтр по статусу (new):</strong>
+        <a href="/api/incidents/?status=new" target="_blank"><code>/api/incidents/?status=new</code></a>
+    </li>
+    <li>
+        <strong>Создать инцидент (POST):</strong>
+        <a href="/api/incidents/create/" target="_blank"><code>/api/incidents/create/</code></a>
+    </li>
+    <li>
+        <strong>Обновить статус (PATCH):</strong>
+        <a href="/api/incidents/1/status/" target="_blank"><code>/api/incidents/1/status/</code></a>
+        <p style="margin-left: 20px;">В ссылке выше 1 это id инцидента. Подставьте какой захотите из созданного ранее.</p>
+    </li>
+</ul>
+
+<hr>
+</body>
+</html>
